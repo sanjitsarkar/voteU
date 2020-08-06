@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">VoteU</string>
+    <string name="back_to_home_page"><![CDATA[<- Back to Home Page]]></string>
+    <string name="_2_00_pm">2:00 pm</string>
+    <string name="check_the_results_by">Check the results by</string>
+    <string name="successfully_voted">Successfully voted</string>
+    <string name="cse_4th_sem">CSE-4th sem.</string>
+    <string name="nitya_ranjan_deori">Nitya ranjan Deori</string>
 </resources>

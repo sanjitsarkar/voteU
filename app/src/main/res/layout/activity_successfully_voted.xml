@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    tools:context=".Successfully_voted">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="147dp">
+
+        <ImageView
+            android:id="@+id/successfulImageView"
+            android:layout_width="113dp"
+            android:layout_height="117dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/checked" />
+
+        <TextView
+            android:id="@+id/successfulTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/successfulImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="109dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/successfully_voted"
+            android:textAllCaps="false"
+            android:textColor="#2196F3"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/checkresultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/successfulTextView"
+            android:layout_alignStart="@id/successfulTextView"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/check_the_results_by"
+            android:textColor="#656464"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/successfulTextView"
+            android:layout_alignBaseline="@id/checkresultTextView"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/checkresultTextView"
+            android:fontFamily="@font/poppins"
+            android:text="@string/_2_00_pm"
+            android:textColor="#03A9F4"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/homepageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@color/sky_blue"
+            android:backgroundTint="@color/sky_blue"
+            android:elevation="10dp"
+            android:fontFamily="@font/poppins"
+            android:onClick="homePage"
+            android:text="@string/back_to_home_page"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
